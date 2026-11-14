@@ -31,11 +31,11 @@ export default function RootLayout({ children }) {
               <CustomLink path="/">Home </CustomLink>
             </li>
             <li>
-              <CustomLink path="/dashboard/analytics">Analytics </CustomLink>
+              <CustomLink path="/analytics">Analytics </CustomLink>
               {/* This one is for dynamic routing <Link href={`post/${post1}`}>Analytics </CustomLink> */}
             </li>
             <li>
-              <CustomLink path="/dashboard/settings">Settings </CustomLink>
+              <CustomLink path="/settings">Settings </CustomLink>
             </li>
             <li>
               <CustomLink path="/heavy">Heavy </CustomLink>
