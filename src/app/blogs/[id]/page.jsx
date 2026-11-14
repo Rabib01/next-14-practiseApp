@@ -1,6 +1,17 @@
 import blogs from "../../../../data/blogs";
 
-// the rest is JS
+export function generateStaticParams() {
+  {
+    /**
+     * params is a static array of objects :
+     * [
+     * {id:1 },
+     * {id:2 }
+     * ]
+     */
+  }
+  return blogs.map((blog) => ({ id: String(blog.id) }));
+}
 
 export default async function SingleBlog({ params }) {
   // params.id er moddhe amra particular blog object ta pabo

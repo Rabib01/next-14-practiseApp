@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import CustomLink from "../../components/CustomLink";
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,25 +28,27 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <nav className="border-b p-4 border-gray-600 ">
           <ul className="flex gap-5">
-            <li>
-              <CustomLink path="/">Home </CustomLink>
-            </li>
-            <li>
-              <CustomLink path="/analytics">Analytics </CustomLink>
-              {/* This one is for dynamic routing <Link href={`post/${post1}`}>Analytics </CustomLink> */}
-            </li>
-            <li>
-              <CustomLink path="/settings">Settings </CustomLink>
-            </li>
-            <li>
-              <CustomLink path="/heavy">Heavy </CustomLink>
-            </li>
-            <li>
-              <CustomLink path="/heavy2">Heavy-2 </CustomLink>
-            </li>
-            <li>
-              <CustomLink path="/blogs">Blogs </CustomLink>
-            </li>
+            <Suspense fallback={<div>Loading ...</div>}>
+              <li>
+                <CustomLink path="/">Home </CustomLink>
+              </li>
+              <li>
+                <CustomLink path="/analytics">Analytics </CustomLink>
+                {/* This one is for dynamic routing <Link href={`post/${post1}`}>Analytics </CustomLink> */}
+              </li>
+              <li>
+                <CustomLink path="/settings">Settings </CustomLink>
+              </li>
+              <li>
+                <CustomLink path="/heavy">Heavy </CustomLink>
+              </li>
+              <li>
+                <CustomLink path="/heavy2">Heavy-2 </CustomLink>
+              </li>
+              <li>
+                <CustomLink path="/blogs">Blogs </CustomLink>
+              </li>
+            </Suspense>
           </ul>
         </nav>
         {children}

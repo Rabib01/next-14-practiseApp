@@ -16,4 +16,5 @@ export default function CustomLink({ path, children }) {
     </Link>
   );
 }
+
 // scrollable path within a page href=/dashboard#settings
