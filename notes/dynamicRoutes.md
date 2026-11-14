@@ -103,3 +103,4 @@ dynamic segments can be extended to catch all sub-sequent segments by adding an 
 
 - extreme level er nested routes through dynamic segments k help kore
 - nut boltu optinal catch all segments o ache
+-
