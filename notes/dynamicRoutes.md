@@ -8,4 +8,18 @@ Ei khetre 100ta blogpost thakle oviously 100 ta folder toh ar kora jabena
 
 ### These are known as dynamic segments
 
--
+- these blogs/1 blogs/2 are known as route parameters
+- just wrap the folder as [keyName] keyName inside of a third bracket!
+- domainName/blogs?id=5 -> this is known as query string or a search parameter
+- eitar vitore [id] id folder er vitore amra page..js dib
+
+```javascript
+export default function SingleBlog({ params }) {
+  // params.id er moddhe amra oi blogPost er id ta pabo
+  return (
+    <div>
+      <h1>Hello world</h1>
+    </div>
+  );
+}
+```
