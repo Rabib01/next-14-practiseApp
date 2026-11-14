@@ -40,6 +40,9 @@ export default function RootLayout({ children }) {
             <li>
               <CustomLink path="/heavy">Heavy </CustomLink>
             </li>
+            <li>
+              <CustomLink path="/heavy2">Heavy-2 </CustomLink>
+            </li>
           </ul>
         </nav>
         {children}
