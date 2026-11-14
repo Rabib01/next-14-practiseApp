@@ -3,7 +3,7 @@ import SortProducts from "../../../../components/SortComponents";
 
 export default function Analytics() {
   // in real life scenarios these will be errors regarding for example : fetching data from a server and then it will result in a failure on the fetch case
-  throw new Error("Error in analytics page");
+  // throw new Error("Error in analytics page");
 
   return (
     <div className="p-4 ">

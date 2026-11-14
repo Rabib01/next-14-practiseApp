@@ -66,5 +66,9 @@ export default function Error({ error, reset }) {
     * but practically ei layout file e error hoile bad baki app kaaj korar e kotha na and so roduction e bokahoda hoye thaka lagbe  ! 
     * but eikhane html and body tags sob e dite hobe 
     * it is recommemded not to keep an error file in the global 
+    * in cases for example autentication error - we are getting stuff related to authentication and fetching - in these cases we can think of keeping a global-error.js file 
+    * global-error.js thakleo it is still recommended to get a root-error.js file 
+    * aro nekra hocche j development environment e eita nao dekte pari amra - eita amra dekte parbo only in the production nvironent 
+    * 
    */
 }
